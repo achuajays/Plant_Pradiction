@@ -7,7 +7,7 @@ app = FastAPI(
     title="Plant Disease Prediction API",
     description="API to predict plant diseases from images"
 )
-
+ 
 # Single API endpoint for prediction
 @app.post("/predict")
 def predict(file: UploadFile = File(...)):
